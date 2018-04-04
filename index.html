@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Home"
+animationIn: "fadeIn"
+---
+
+<section class="slide slide--home">
+
+  <div class="slide__overlay">
+    <div class="slide__text">
+      <div class="container text-center">
+        <h1 class="text-uppercase">{{ site.title }}</h1>
+        {%- if site.description -%}
+  			 <h3>{{ site.description }}</h3>
+        {%- endif -%}
+  			<ul class="list-unstyled">
+          <li>
+            <a href="/videos/introduction/">
+              <i class="icon icon--play"></i> Watch Introduction
+            </a>
+          </li>
+  				<li>
+            <a href="/about/">About the project</a>
+          </li>
+  			</ul>
+      </div>
+    </div>
+  </div>
+</section>

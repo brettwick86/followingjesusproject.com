@@ -1,0 +1,48 @@
+title: "Following Jesus Project"
+description: >
+  A Documentary Video Series
+
+collections:
+  videos:
+    output: true
+
+menu:
+  - 
+    title: "Home"
+    url: /
+  -
+    title: "Introduction"
+    url: /videos/introduction/
+  -
+    title: "Pittsburgh"
+    url: /videos/pittsburgh/
+  -
+    title: "Philadelphia"
+    url: /videos/philadelphia/
+  -
+    title: "Atlanta"
+    url: /videos/atlanta/
+  -
+    title: "Houston"
+    url: /videos/houston/
+  -
+    title: "Los Angeles"
+    url: /videos/los-angeles/
+  -
+    title: "San Francisco"
+    url: /videos/san-francisco/
+  -
+    title: "Conclusion"
+    url: /videos/conclusion/
+  -
+    title: "About"
+    url: /about/
+  -
+    title: "Connect"
+    externalUrl: https://www.facebook.com/FollowingJesusProject/
+
+sass:
+  style: compact
+
+permalink: /:categories/:title/
+markdown: kramdown

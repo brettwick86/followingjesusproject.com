@@ -1,0 +1,19 @@
+<header class="site-navbar">
+  <button id="site-navbar-trigger" class="site-navbar-trigger trigger" href="#site-navbar"></button>
+
+  <nav id="site-navbar" class="navbar hidden" data-animation-in="slideInRight" data-animation-out="animated--fast slideOutRight">
+
+    {%- if site.menu -%}
+      <span class="navbar__divider">Menu</span>
+      {%- for item in site.menu -%}
+        {%- if item.externalUrl -%}
+          <a class="navbar__item" href="{{ item.externalUrl }}" target="_blank">{{ item.title }}</a>
+        {%- endif -%}
+        {%- if item.url -%}
+          <a class="navbar__item" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+
+  </nav>
+</header>

@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<section class="slide">
+
+	{%- unless page.displayText == false -%}
+    <div id="slide-wrapper" class="slide__overlay" data-animation-out="fadeOut" data-animation-in="fadeIn">
+  	  <div class="slide__text">
+        <div class="container">
+  	      <h1>{{ page.title }}</h1>
+  	      {{ content }}
+          <ul class="list-unstyled">
+            {%- if page.videoUrl -%}
+              <li>
+                <a id="slide-trigger" class="trigger" data-target="#slide-wrapper" href>
+                  <i class="icon icon--play"></i> Watch {{ page.title }}
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if page.nextUrl -%}
+              <li>
+                <a href="{{ page.nextUrl }}">Next video</a>
+              </li>
+            {%- endif -%}
+          </ul>
+        </div>
+  	  </div>
+    </div>
+  {%- endunless -%}
+
+  {%- if page.videoUrl -%}
+  	<div class="video slide__video">
+    	<iframe src="{{ page.videoUrl }}?&color=f03434&portrait=false&byline=false&title=false" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  	</div>
+  {%- endif -%}
+
+</section>

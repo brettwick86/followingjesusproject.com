@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main id="site-content" class="site-content" data-animation-in="{{ page.animationIn | default: "slideInUp" }}" data-animation-out="{{ page.animationOut | default: "slideOutUp" }}">
+
+      {{ content }}
+
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+</html>
