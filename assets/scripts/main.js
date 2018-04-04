@@ -15,7 +15,7 @@
 		var $element = $($this.attr("href") || $this.data("target"));
 		var show = $element.hasClass("hidden");
 		var animation = show ? $element.data("animationIn") : $element.data("animationOut");
-		console.log(animation)
+
 		// Show and hide modes
 		if (show) {
 			// Change class on trigger element
@@ -133,8 +133,6 @@
 			case 32:
 				// console.log("space");
 				$("#slide-trigger").trigger("click");
-				return false;
-			default:
 				return false;
 		}
 	});

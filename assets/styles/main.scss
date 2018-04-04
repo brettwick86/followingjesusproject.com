@@ -185,8 +185,8 @@ body {
 	height: 100%;
 	overflow: hidden;
 	&--home {
-		background-image: url(/assets/images/home-bg-img.jpg);
-		background-position: cover;
+		background-image: url({{ "/assets/images/home-bg-img.jpg" | relative_url }});
+		background-size: cover;
 		background-repeat: no-repeat;
     .slide__overlay {
       background-color: rgba(0,0,0,.6);
