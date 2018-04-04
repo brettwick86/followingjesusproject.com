@@ -6,6 +6,8 @@ collections:
   videos:
     output: true
 
+baseurl: /followingjesusproject
+
 menu:
   - 
     title: "Home"
