@@ -6,7 +6,7 @@ collections:
   videos:
     output: true
 
-baseurl: /followingjesusproject
+# baseurl: /followingjesusproject
 
 menu:
   - 
