@@ -20,7 +20,8 @@ layout: default
             {%- endif -%}
             {%- if page.nextUrl -%}
               <li>
-                <a href="{{ page.nextUrl | relative_url }}">Next video</a>
+                <a href="{{ page.nextUrl | relative_url }}">
+                  {%- if page.nextText -%}{{ page.nextText }}{%- else -%}Next video{%- endif -%}</a>
               </li>
             {%- endif -%}
           </ul>
