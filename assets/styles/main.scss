@@ -72,12 +72,19 @@ body {
 	}
 }
 
+p,
+ul,
+ol {
+  margin-top: 0;
+ margin-bottom: .5rem;
+}
+
 // Layout
 .container {
   width: 100%;
   max-width: 960px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -121,21 +128,25 @@ body {
 .site-navbar-trigger {
   position: fixed;
   z-index: 30;
-  top: 1em;
-  right: 1em;
+  top: 1rem;
+  right: 1rem;
   background-color: transparent;
   border: 0;
   color: $color-primary;
   font-size: 1.5rem;
   cursor: pointer;
-  &:focus {
-    outline: 0;
-  }
   @extend .icon;
   @extend .icon--menu;
+
   &.trigger--open {
-  @extend .icon--close;
-}
+    @extend .icon--close;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: darken($color-primary, 12%);
+  }
 }
 
 .navbar {
@@ -147,8 +158,10 @@ body {
 	width: 100%;
 	max-width: 300px;
 	background-color: rgba(0,0,0,.75);
-	padding: 0 1.5em;
+	padding: 0 1.5rem;
 	line-height: 1.5;
+  overflow: scroll;
+  padding-bottom: 1rem;
 	&__item {
 		display: block;
 		width: 100%;
@@ -156,7 +169,7 @@ body {
 	&__divider {
 		display: block;
 		width: 100%;
-		padding-top: 1.5em;
+		padding-top: 1.5rem;
 	}
 }
 
@@ -209,9 +222,15 @@ body {
 		width: 100%;
 		top: 50%;
 	  transform: translateY(-50%);
-    font-size: 1.25em;
+    font-size: 1.25rem;
 	}
-  &__video {}
+  &__video {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 // Turbolinks
