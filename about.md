@@ -6,7 +6,7 @@ animationIn: "fadeIn"
 animationOut: "fadeOut"
 ---
 
-Six friends embarked on a two-month, 8,000 mile road trip across the United States. With cameras rolling, we set out find examples of people and organizations that were actively dislaying the love of Jesus through the work and service they provide to their communities. The Following Jesus Project is a series of short documentary-style videos that showcases Jesus' command to his followers, that we love our neighbors as we love ourselves. The community-driven goals of the poeple we encounted along our jornery taughe us that we don't need to travel far to be missionaries. There is already an important mission field in each or our backyards.
+Six friends embarked on a two-month, 8,000 mile road trip across the United States. With cameras rolling, we set out find examples of people and organizations that were actively displaying the love of Jesus through the work and service they provide to their communities. The Following Jesus Project is a series of short documentary-style videos that showcases Jesus’ command to his followers, that we love our neighbors as we love ourselves. The community-driven goals of the people we encountered along our journey taught us that we don’t need to travel far to be missionaries. There is already an important mission field in each or our backyards.
 
 ### Watch the trailer
 
