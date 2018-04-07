@@ -34,7 +34,9 @@ We have so many people and organizations to thank for their support. The followi
 * [Keystone Project](http://www.keystoneproject.org/houston-mission-field/) in Houston, Texas
 * [Sunshine Acres Children's Home](http://sunshineacres.org/wordpress) in Phoenix, Arizona
 * [Central City Community Outreach](http://lacentralcity.org/) in Los Angeles, California
-* [Simple Church, World Impact Los Angeles](http://www.worldimpactla.org/ministries/churchplants/simplechurch/index.html), California
+* [Simple Church, World Impact Los Angeles](http://www.worldimpactla.org/ministries/churchplants/simplechurch/index.html) in California
 * [City Team](http://cityteam.org) in San Francisco, California
-* [World Impact San Francisco](http://www.worldimpactwest.com/bayarea/), California
+* [World Impact San Francisco](http://www.worldimpactwest.com/bayarea/) in California
 * [Bay Community Fellowship](http://baycommunityfellowshipp.webs.com) in Oakland, California
+
+[Connect](https://www.facebook.com/FollowingJesusProject/) with us on Facebook!
