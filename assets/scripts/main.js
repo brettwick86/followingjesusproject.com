@@ -78,10 +78,16 @@
 		var $element = $("#site-content");
 		var animation = $element.data("animationIn");
 		var url = event.currentTarget.URL.slice(window.location.origin.length);
-		
-		navigationCurrent = navigation.indexOf(url);
-		navigationPrev = (navigationCurrent - 1);
-		navigationNext = (navigationCurrent + 1);
+		// Set current navigation index
+		navCurrent = navigation.indexOf(url);
+
+		// Set next and prev indicies
+		if (navCurrent !== -1) {
+			navPrev = (navCurrent - 1);
+			navNext = (navCurrent + 1);
+		}
+
+		console.log(navPrev, navNext);
 
 		// Animate content into view
 		if (animation) {
@@ -93,47 +99,47 @@
 	var navigation = '{%- for item in site.menu -%}{%- if item.url -%}||{{ item.url | relative_url }}{%- endif -%}{%- endfor -%}'
 		.substring(2)
 		.split("||");
-	var navigationCurrent = -1;
-	var navigationPrev = -1;
-	var navigationNext = navigation.length;
+	var navCurrent;
+	var navPrev;
+	var navNext;
 
 	// Keyboard navigation
 	$(document).keydown(function(event) {
 		switch(event.keyCode) {
 			case 40:
 				// console.log("arrow down");
-				if (navigationNext !== navigation.length) {
-					Turbolinks.visit(navigation[navigationNext]);
+				if (navNext < navigation.length) {
+					Turbolinks.visit(navigation[navNext]);
 				}
-				return false;
+				break;
 			case 38:
 				// console.log("arrow up");
-				if (navigationPrev !== -1) {
-					Turbolinks.visit(navigation[navigationPrev]);
+				if (navPrev > -1) {
+					Turbolinks.visit(navigation[navPrev]);
 				}
-				return false;
+				break;
 			case 37:
 				// console.log("arrow left");
 				if ($("#site-navbar").hasClass("hidden")) {
 					$("#site-navbar-trigger").trigger("click");
 				}
-				return false;
+				break;
 			case 39:
 				// console.log("arrow right");
 				if (!$("#site-navbar").hasClass("hidden")) {
 					$("#site-navbar-trigger").trigger("click");
 				}
-				return false;
+				break;
 			case 27:
 				// console.log("escape");
 				if (!$("#site-navbar").hasClass("hidden")) {
 					$("#site-navbar-trigger").trigger("click");
 				}
-				return false;
+				break;
 			case 32:
-				// console.log("space");
+				// console.log("space bar");
 				$("#slide-trigger").trigger("click");
-				return false;
+				break;
 		}
 	});
 })();
